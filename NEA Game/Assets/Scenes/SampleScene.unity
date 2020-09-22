@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fad242f47b50b84cb32d8a119938957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 400
   playerBody: {fileID: 1829246310}
 --- !u!1001 &1080360060
 PrefabInstance:
@@ -1172,6 +1172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 1829246311}
   anim: {fileID: 1829246308}
+  speed: 10
 --- !u!4 &1829246310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 725477ee032b11747abb7bb6648192c1, type: 3}
@@ -1191,7 +1192,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &1829246312
 BoxCollider:
