@@ -7,7 +7,7 @@ public class player : MonoBehaviour
     public Rigidbody RB;
     public Animator anim;
 
-    public float speed = 10;
+    public float speed = 8;
 
     // Start is called before the first frame update
     void Start()
@@ -40,13 +40,13 @@ public class player : MonoBehaviour
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 3);
-            RB.AddForce(Vector3.left * speed);
+            RB.AddForce(Vector3.left * speed / 3);
         }
         else if (Input.GetKey(KeyCode.D))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 2);
-            RB.AddForce(Vector3.right * speed);
+            RB.AddForce(Vector3.right * speed / 3);
         }
         else
         {
