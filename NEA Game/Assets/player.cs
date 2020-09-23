@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
-    public Rigidbody RB;
+    public CharacterController controller;
+
     public Animator anim;
 
     public float speed = 8;
@@ -18,35 +19,36 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        Vector3 move = transform.right * x + transform.forward * z;
+
+        controller.Move(move * speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.W)))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 1);
-            RB.AddForce((Vector3.forward + Vector3.left) * speed);
         }
         else if (Input.GetKey(KeyCode.D) && (Input.GetKey(KeyCode.W)))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", -1);
-            RB.AddForce((Vector3.forward + Vector3.right) * speed);
         }
         else if (Input.GetKey(KeyCode.W))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 0);
-            RB.AddForce(Vector3.forward * speed);
         }
         else if (Input.GetKey(KeyCode.A))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 3);
-            RB.AddForce(Vector3.left * speed / 3);
         }
         else if (Input.GetKey(KeyCode.D))
         {
             anim.SetFloat("vertical", 1);
             anim.SetFloat("horizontal", 2);
-            RB.AddForce(Vector3.right * speed / 3);
         }
         else
         {

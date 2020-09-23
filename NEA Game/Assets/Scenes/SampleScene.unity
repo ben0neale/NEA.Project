@@ -1111,7 +1111,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.659
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -4127,22 +4127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 963194228, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.89
-      objectReference: {fileID: 0}
-    - target: {fileID: 963194228, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1829246309, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
-      propertyPath: speed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1829246311, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
     - target: {fileID: 8460500765833725224, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
       propertyPath: m_Name
       value: player
@@ -4153,7 +4137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9088945961799049106, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -0.00011111111
       objectReference: {fileID: 0}
     - target: {fileID: 9088945961799049106, guid: e54c78446c25ee744b160089e8de6cd7, type: 3}
       propertyPath: m_LocalPosition.z
